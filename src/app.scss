@@ -1,0 +1,15 @@
+@import "~@material/button/mdc-button";
+@import "~@material/ripple/mdc-ripple";
+@import "~@material/form-field/mdc-form-field";
+@import "~@material/checkbox/mdc-checkbox";
+
+.foo-button {
+  @include mdc-button-ink-color(#d90060);
+  @include mdc-states(#d90060);
+}
+
+.mdc-checkbox {
+  @include mdc-checkbox-container-colors(#ff7519, transparent, #00ff55, #0357ff, true);
+  @include mdc-checkbox-focus-indicator-color(#ff00ff);
+  @include mdc-checkbox-ink-color(#a1ecf9)
+}
